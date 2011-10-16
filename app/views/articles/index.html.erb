@@ -1,0 +1,12 @@
+<% for article in @articles do %>
+  <h3><%= link_to article.title, article_comments_path(article) %></h3>
+  <p>Category: <%= article.category %>, posted <%= article.created_at.strftime("%d/%m/%Y") %></p>
+  <p><%= article.content %></p>
+  <p>
+    <%= comments_link article %>
+    url:&nbsp;<span><%= article.url.nil? ? 'No urls' : article.url %></span>
+    tags:&nbsp;<span><%= article.tags.nil? ? 'No tags' : article.tags %></span>
+    rating:&nbsp;<span><%= raiting_block(article.id, article.rating) %></span>
+  </p>
+<% end %>
+

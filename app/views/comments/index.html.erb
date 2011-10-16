@@ -1,0 +1,25 @@
+<h3><%= @article.title %></h3>
+<p>Category: <%= @article.category %>, posted <%= @article.created_at.strftime("%d/%m/%Y") %></p>
+<p><%= @article.content %></p>
+<p>
+  <%= link_to "Edit", edit_article_path(@article) %>
+  <%= link_to 'Delete', @article, :confirm => 'Are you sure?', :method => :delete %>
+  url:&nbsp;<%= @article.url %>
+  tags:&nbsp;<%= @article.tags %>
+</p>
+<div class="comments">
+  <p><%= pluralize(@comments.size == 0 ? "No" : @comments.size, " comment") %> on <%= @article.title %></p>
+  <% for comment in @comments do %>
+    <span>
+      <%= comment.author %><span><%= comment.created_at.strftime("%d.%m.%Y") %></span>
+    </span>
+    <p>
+      <%= comment.content %>
+    </p>
+  <% end %>
+</div>
+<div class="new-comment">
+  <p>New comment</p>
+  <%= render 'form', :locals => { :comment => @article.comments } %>
+</div>
+

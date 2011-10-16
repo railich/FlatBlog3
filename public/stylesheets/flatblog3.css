@@ -1,0 +1,267 @@
+* {
+    color: #373431;
+    font-family: Trebuchet MS,Helvetica,sans-serif;
+    font-size: 14px;
+}
+html {
+    background-color: #F6F5F1;
+    border-top: 15px solid #807873;
+    height: 100%;
+    width: 100%;
+}
+body {
+    border-bottom: 5px solid #807873;
+    margin: 0 auto;
+    width: 880px;
+}
+h1 {
+    color: #807873;
+    font-size: 24px;
+    margin: 0;
+}
+h1 span {
+    color: #E97004;
+    font-size: 100%;
+}
+span[id^="article_"] {
+    font-size: 120%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+span[id^="article_"] a {
+    background-color: #E97004;
+    border: 1px solid #E97004;
+    border-radius: 6px 6px 6px 6px;
+    color: #F6F5F1;
+    display: inline-block;
+    line-height: 7px;
+    margin: 0 5px;
+    text-decoration: none;
+    width: 7px;
+}
+span[id^="article_"] a:hover {
+    background-color: #F6F5F1;
+    color: #E97004;
+}
+#title {
+    border-bottom: 4px solid #B9B6B4;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    width: 100%;
+}
+  #title > div:first-child {
+      float: left;
+      width: 350px;
+  }
+    #title > div:first-child p {
+        border-left: 2px solid #E97004;
+        color: #8F8F8F;
+        font-size: 10px;
+        margin-left: 18px;
+        padding-left: 5px;
+        text-transform: uppercase;
+    }
+    #title > div:first-child + div {
+        color: #F8F8F8;
+        float: right;
+        text-align: right;
+        width: 520px;
+    }
+      #title > div:first-child + div a {
+          border-left: 1px dotted #E97004;
+          border-right: 2px solid #F6F5F1;
+          color: #807873;
+          padding-left: 5px;
+          text-decoration: none;
+      }
+      #title > div:first-child + div a:hover {
+          border-left: 2px solid #E97004;
+          border-right: 1px solid #F6F5F1;
+      }
+      #title > div:first-child + div + div {
+          margin: 40px 0 0 350px;
+          min-height: 40px;
+          padding: 0 0 0 5px;
+          width: 500px;
+      }
+        #title > div:first-child + div + div + div {
+            height: 0;
+            position: relative;
+            text-align: right;
+            top: 10px;
+            width: 100%;
+        }
+
+          #title > div:first-child + div + div + div a {
+              font-size: 10px;
+              text-decoration: none;
+              text-transform: uppercase;
+          }
+          #title > div:first-child + div + div + div a:hover {
+              border-right: 2px solid #E97004;
+              padding: 0 3px;
+          }
+h3 {
+    color: #807873;
+    font-size: 22px;
+    margin: 0;
+    text-transform: capitalize;
+}
+h3 a {
+    color: #807873;
+    font-size: 22px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+h3 a:hover {
+    border-left: 2px solid #E97004;
+    padding-left: 5px;
+}
+h3 + p {
+    color: #999999;
+    font-size: 10px;
+    margin: 0;
+    text-transform: uppercase;
+}
+h3 + p + p {
+    color: #666666;
+}
+h3 + p + p + p {
+    border-top: 1px solid #999999;
+    color: #E97004;
+    font-size: 10px;
+    text-align: right;
+}
+h3 + p + p + p > a {
+    border-right: 1px solid #999999;
+    font-size: 10px;
+    margin-right: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+}
+h3 + p + p + p > a:hover {
+    border-right: 2px solid #E97004;
+    padding-right: 15px;
+}
+h3 + p + p + p > span {
+    border-right: 1px solid #999999;
+    font-size: 10px;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+h3 + p + p + p > span:last-child {
+    border-right: 0 none;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.notice {
+    border-left: 2px solid #E97004;
+    font-size: 10px;
+    padding-left: 5px;
+    text-transform: uppercase;
+}
+.alert {
+    border-left: 2px solid red;
+    font-size: 10px;
+    padding-left: 5px;
+    text-transform: uppercase;
+}
+
+/* Comments */
+.comments span {
+    color: #E97004;
+    padding-left: 15px;
+}
+.comments span + p {
+    padding-left: 25px;
+    color: #666;
+}
+.comments p:first-child {
+    font-size: 18px;
+    border-left: 2px solid #E97004;
+    color: #666;
+    padding-left: 10px;
+}
+.comments span > span:before {
+    content: "commented ";
+}
+.comments span > span {
+    color: #999;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 3px;
+}
+.new-comment {
+    padding-top: 15px;
+}
+.new-comment > p:first-child {
+    font-size: 18px;
+    color: #666;
+    border-left: 2px solid #E97004;
+    padding-left: 10px;
+}
+form[name = "new_comment"] label, form[name = "new_comment"] input {
+    width: 300px;
+    display: block;
+}
+form[name = "new_comment"] {
+    padding-left: 20px;
+}
+form[name = "new_comment"] input[type="text"], form[name = "new_comment"] input[type="password"], form[name = "new_comment"] textarea {
+    margin-bottom: 10px;
+    color: #666;
+    border: 1px solid #CDCDCD;
+    border-radius: 3px;
+    box-shadow: inset 1px 1px 1px #999;
+    padding: 5px;
+    line-height: 18px;
+    background-color: #FFFFFF;
+}
+
+ /* errors */
+
+#errorExplanation {
+    border-radius: 10px;
+    margin: 5px 0;
+    padding: 5px 20px;
+    box-shadow: 2px 2px 3px #000;
+    margin-bottom: 20px;
+    display: inline-block;
+    border: 3px solid #F99;
+}
+div.field_with_errors label:after {
+    border-left: 2px solid #E97004;
+    color: #FF0000;
+    content: " CAN`T BE BLANK";
+    font-size: 10px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+form.new_article, .edit_article {
+    margin-left: 20px;
+}
+
+/* device */
+form.user_new {
+    margin-left: 20px;
+}
+form.user_new input {
+    margin-bottom: 10px;
+}
+form.user_edit {
+    margin-left: 20px;
+}
+form.user_edit input {
+    margin-bottom: 10px;
+}
+form.user_edit + h4 {
+    border-left: 2px solid #E97004;
+    padding-left: 10px;
+}
+form.user_edit + h4 + p {
+    margin-left: 20px;
+}
+
